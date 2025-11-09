@@ -1,0 +1,87 @@
+/* === Modern CSS Reset (React + Vite + BEM) === */
+/* Last updated: 2025-11-09 */
+
+/* 1) Predictable sizing everywhere */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2) Remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3) Allow 100% height layouts */
+html,
+body {
+  height: 100%;
+}
+
+/* 4) Better typography defaults */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* 5) Media elements: responsive by default */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6) Form elements inherit typography & color */
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 7) Prevent text overflow issues */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8) New stacking context for app roots (modals/z-index sanity) */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* 9) Lists without bullets/numbers by default */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 10) Modern button reset using `all: unset` (accessible & consistent) */
+button,
+input[type='button'],
+input[type='submit'],
+input[type='reset'],
+[role='button'] {
+  all: unset; /* wipe UA styles for a true blank slate */
+  box-sizing: border-box; /* keep sizing consistent with the reset */
+  font: inherit; /* restore typography */
+  color: inherit;
+  line-height: inherit;
+  text-align: center;
+  cursor: pointer; /* make it feel clickable */
+  outline: revert; /* restore the default focus ring for a11y */
+  -webkit-tap-highlight-color: transparent; /* nicer on mobile */
+}

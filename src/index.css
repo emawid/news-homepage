@@ -1,0 +1,92 @@
+:root {
+  font-family: 'Inter', sans-serif;
+
+  /* Colors */
+
+  /* White */
+  --white: #ffffff;
+
+  /* Black */
+  --black: #000000;
+
+  /* Grey */
+  --grey-300: #c5c6ce;
+  --grey-200: #d8d8d8;
+
+  /* Navy */
+  --navy-950: #00001a;
+  --navy-600: #5e607a;
+
+  /* Gold */
+  --gold-400: #e9aa52;
+
+  /* Red */
+  --red-500: #f15d51;
+
+  /* Spacing */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-500: 2.5rem; /* 40px */
+  --spacing-800: 4rem; /* 64px */
+  --spacing-1100: 5.5rem; /* 88px */
+}
+
+/* Typography */
+
+/* Text Preset 1 */
+.text-preset-1 {
+  font-weight: 800; /* Extra Bold */
+  font-size: 3.5rem; /* 56px */
+  line-height: 3.5em; /* 56px */
+  letter-spacing: 0em;
+}
+
+/* Text Preset 2 */
+.text-preset-2 {
+  font-weight: 800;
+  font-size: 2.5rem; /* 40px */
+  line-height: 2.5em; /* 40px */
+  letter-spacing: 0em;
+}
+
+/* Text Preset 3 */
+.text-preset-3 {
+  font-weight: 700; /* Bold */
+  font-size: 2rem; /* 32px */
+  line-height: 2em; /* 32px */
+  letter-spacing: 0em;
+}
+
+/* Text Preset 4 */
+.text-preset-4 {
+  font-weight: 800;
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.5em; /* 24px */
+  letter-spacing: 0em;
+}
+
+/* Text Preset 5 */
+.text-preset-5 {
+  font-weight: 800;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.5em; /* 24px */
+  letter-spacing: 0em;
+}
+
+/* Text Preset 6 */
+.text-preset-6 {
+  font-weight: 400; /* Regular */
+  font-size: 0.9375rem; /* 15px */
+  line-height: 1.73em; /* 26px */
+  letter-spacing: 0em;
+}
+
+/* Text Preset 7 */
+.text-preset-7 {
+  font-weight: 700; /* Bold */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.86em; /* 26px */
+  letter-spacing: 0.27em; /* 4.38px */
+  text-transform: uppercase;
+}
