@@ -9,21 +9,23 @@ import NewList from './components/home/NewSidebar/NewList.jsx';
 import TeaserGrid from './components/home/TeaserGrid/TeaserGrid.jsx';
 
 export default function App() {
-  <>
-    <SiteHeader />
-    <main>
-      <Container>
-        <Grid area="hero+sidebar">
-          <HeroFeatured article={featured} />
-          <NewSidebar>
-            <NewList items={news} />
-          </NewSidebar>
-        </Grid>
-        <Grid area="teasers">
-          <TeaserGrid items={teasers} />
-        </Grid>
-      </Container>
-    </main>
-    <SiteFooter />
-  </>;
+  return (
+    <>
+      <SiteHeader />
+      <main>
+        <Container>
+          <Grid area="hero+sidebar">
+            <HeroFeatured article={featured} />
+            <NewSidebar>
+              <NewList items={news} />
+            </NewSidebar>
+          </Grid>
+          <Grid area="teasers">
+            <TeaserGrid items={teasers} />
+          </Grid>
+        </Container>
+      </main>
+      <SiteFooter />
+    </>
+  );
 }
