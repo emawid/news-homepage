@@ -17,7 +17,7 @@ export default function SiteHeader() {
   return (
     <header className="header">
       <div className="header__inner">
-        <a className="header__logo" aria-label="Home" href="/">
+        <a className="header__logo" aria-label="Home" href={import.meta.env.BASE_URL}>
           <img src={Logo} width={65} height={40} alt="Site logo" />
         </a>
         <button

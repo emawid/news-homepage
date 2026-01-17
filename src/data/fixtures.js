@@ -1,9 +1,14 @@
+const withBaseUrl = (path) => {
+  const normalized = String(path).replace(/^\/+/, '');
+  return `${import.meta.env.BASE_URL}${normalized}`;
+};
+
 export const featured = {
   title: 'The Bright Future of Web 3.0?',
   dek: 'We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?',
   ctaLabel: 'Read more',
   hero: {
-    src: '/images/image-web-3-desktop.jpg',
+    src: withBaseUrl('/images/image-web-3-desktop.jpg'),
     alt: 'Abstract 3D blocks',
   },
 };
@@ -34,7 +39,7 @@ export const teasers = [
     index: '01',
     title: 'Reviving Retro PCs',
     excerpt: 'What happens when old PCs are given modern upgrades?',
-    src: '/images/image-retro-pcs.jpg',
+    src: withBaseUrl('/images/image-retro-pcs.jpg'),
     alt: 'Retro PC',
   },
   {
@@ -42,7 +47,7 @@ export const teasers = [
     index: '02',
     title: 'Top 10 Laptops of 2022',
     excerpt: 'Our best picks for various needs and budgets.',
-    src: '/images/image-top-laptops.jpg',
+    src: withBaseUrl('/images/image-top-laptops.jpg'),
     alt: 'Laptop grid',
   },
   {
@@ -50,7 +55,7 @@ export const teasers = [
     index: '03',
     title: 'The Growth of Gaming',
     excerpt: 'How the pandemic has sparked fresh opportunities.',
-    src: '/images/image-gaming-growth.jpg',
+    src: withBaseUrl('/images/image-gaming-growth.jpg'),
     alt: 'Game controller',
   },
 ];
