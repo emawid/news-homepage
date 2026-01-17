@@ -7,6 +7,7 @@ import HeroFeatured from './components/home/HeroFeatured.jsx';
 import NewSidebar from './components/home/NewSidebar/NewSidebar.jsx';
 import NewList from './components/home/NewSidebar/NewList.jsx';
 import TeaserGrid from './components/home/TeaserGrid/TeaserGrid.jsx';
+import './App.css';
 
 export default function App() {
   return (

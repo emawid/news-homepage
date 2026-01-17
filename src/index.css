@@ -32,6 +32,10 @@
   --spacing-1100: 5.5rem; /* 88px */
 }
 
+body {
+  padding-inline: clamp(1rem, -2.0408rem + 8.1633vw, 5rem);
+}
+
 /* Typography */
 
 /* Text Preset 1 */
@@ -46,7 +50,7 @@
 .text-preset-2 {
   font-weight: 800;
   font-size: 2.5rem; /* 40px */
-  line-height: 2.5em; /* 40px */
+  line-height: 1; /*  */
   letter-spacing: 0em;
 }
 
@@ -54,7 +58,7 @@
 .text-preset-3 {
   font-weight: 700; /* Bold */
   font-size: 2rem; /* 32px */
-  line-height: 2em; /* 32px */
+  line-height: 1; /* 32px */
   letter-spacing: 0em;
 }
 
@@ -78,7 +82,7 @@
 .text-preset-6 {
   font-weight: 400; /* Regular */
   font-size: 0.9375rem; /* 15px */
-  line-height: 1.73em; /* 26px */
+  line-height: 1.73; /* 26px */
   letter-spacing: 0em;
 }
 
@@ -86,7 +90,7 @@
 .text-preset-7 {
   font-weight: 700; /* Bold */
   font-size: 0.875rem; /* 14px */
-  line-height: 1.86em; /* 26px */
+  line-height: 1.86; /* 26px */
   letter-spacing: 0.27em; /* 4.38px */
   text-transform: uppercase;
 }
