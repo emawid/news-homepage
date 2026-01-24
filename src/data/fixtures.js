@@ -8,7 +8,13 @@ export const featured = {
   dek: 'We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?',
   ctaLabel: 'Read more',
   hero: {
-    src: withBaseUrl('/images/image-web-3-desktop.jpg'),
+    src: withBaseUrl('/images/image-web-3-mobile.jpg'),
+    sources: [
+      {
+        srcSet: withBaseUrl('/images/image-web-3-desktop.jpg'),
+        media: '(min-width: 900px)',
+      },
+    ],
     alt: 'Abstract 3D blocks',
   },
 };

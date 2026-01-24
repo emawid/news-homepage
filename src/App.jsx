@@ -1,6 +1,6 @@
 import { featured, news, teasers } from './data/fixtures.js';
 import SiteHeader from './components/layout/SiteHeader.jsx';
-import SiteFooter from './components/layout/SiteFooter.jsx';
+
 import Container from './components/layout/Container.jsx';
 import Grid from './components/layout/Grid.jsx';
 import HeroFeatured from './components/home/HeroFeatured.jsx';
@@ -26,7 +26,6 @@ export default function App() {
           </Grid>
         </Container>
       </main>
-      <SiteFooter />
     </>
   );
 }

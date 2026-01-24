@@ -141,7 +141,11 @@
 }
 
 .grid--hero {
-  margin-top: 32px;
+  margin-top: clamp(
+    var(--spacing-400),
+    calc(var(--spacing-400) + (100vw - 375px) * 0.0609524),
+    var(--spacing-800)
+  );
   display: grid;
   gap: var(--spacing-800);
   grid-template-columns: 1fr;
@@ -152,13 +156,21 @@
     grid-template-columns:
       minmax(0, clamp(343px, calc(36.34vw + 206.73px), 730px))
       minmax(0, 1fr);
-    gap: var(--spacing-300);
+    gap: var(--spacing-400);
   }
 }
 
 .hero {
   display: grid;
   gap: var(--spacing-300);
+}
+
+/*
+  Hero image sizing
+  - Fixed 300px height on all viewports
+*/
+.hero .media {
+  height: 300px;
 }
 
 .hero__title {
@@ -195,6 +207,11 @@
   width: fit-content;
 }
 
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
 @media (min-width: 900px) {
   .btn {
     grid-column: 2;
@@ -206,7 +223,7 @@
   display: flex;
   flex-direction: column;
   padding: var(--spacing-200, 16px) var(--spacing-300, 24px);
-  gap: var(--spacing-100, 8px);
+  gap: var(--spacing-400, 8px);
 }
 
 .new__titel {
@@ -215,7 +232,11 @@
 
 .new__list {
   display: grid;
-  gap: var(--spacing-400);
+}
+
+.new-item {
+  display: grid;
+  gap: var(--spacing-100);
 }
 
 .new-item__title {
@@ -223,8 +244,23 @@
   color: var(--white);
 }
 
+.new-item:hover {
+  cursor: pointer;
+}
+
+.new-item:hover .new-item__title,
+.new-item:focus-within .new-item__title {
+  color: var(--gold-400);
+}
+
 .new-item__excerpt {
   color: var(--grey-300);
+}
+
+.new__divider {
+  height: 1px;
+  background-color: var(--navy-600);
+  margin-block: var(--spacing-400);
 }
 
 /* TeaserGrid */
@@ -247,6 +283,11 @@
   column-gap: var(--spacing-300);
   row-gap: var(--spacing-100);
   align-items: start;
+  cursor: pointer;
+}
+
+.teaser:hover .teaser__title {
+  color: var(--gold-400);
 }
 
 .teaser .media {
